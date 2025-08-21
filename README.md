@@ -43,7 +43,7 @@ asdf install lintnet latest
 asdf global lintnet latest
 
 # Now lintnet commands are available
-<TOOL CHECK>
+lintnet --version
 ```
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
