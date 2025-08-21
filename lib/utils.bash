@@ -74,7 +74,7 @@ download_release() {
 	filename="$2"
 
 	# TODO: Adapt the release URL convention for lintnet
-	url="$GH_REPO/releases/download/${version}/lintnet_$(get_platform)_$(get_arch).tar.gz"
+	url="$GH_REPO/releases/download/v${version}/lintnet_$(get_platform)_$(get_arch).tar.gz"
 
 	echo "* Downloading $TOOL_NAME release $version..."
 	curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
